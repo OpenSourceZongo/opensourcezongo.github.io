@@ -11,6 +11,12 @@ body{
     background-repeat: no-repeat;
     background-color: rgba(250,250,250,.6);
     background-blend-mode: color;
+    background-attachment: fixed;
+}
+
+p{
+    box-sizing: border-box;
+    padding: 0px 5vw;
 }
 
 div.nav{
@@ -24,10 +30,56 @@ div.nav{
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    position: sticky;
+    top: 0px;
+    box-shadow: 1px 1px 8px 1px gray;
 }
 
 div.nav svg{
     width: auto;
     height: 60%;
     margin: auto 0px;
+}
+
+div.nav-area{
+    background-color: white;
+    transition: all .5s linear;
+    height: 0%;
+    overflow: hidden;
+}
+
+@keyframes open{
+    from{
+        height: 0%;
+    }
+
+
+
+    to{
+        height: max-content;
+    }
+}
+
+.open{
+    animation: open linear .25s forwards;
+}
+
+
+.hide{
+    display: none;
+}
+
+div.nav-area a{
+    display: block;
+    text-align: left;
+    padding: .5em;
+}
+
+footer{
+    background-color: #222222;
+    color: white;
+    font-size: 11pt;
+    font-style: italic;
+    text-align: left;
+    padding: 10px;
 }

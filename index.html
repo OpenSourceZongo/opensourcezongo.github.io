@@ -2,21 +2,48 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css" type="text/css" />
-        <link rel="icon" href="favicon.png" type="image/png" />
         <meta name="viewport" content="width=device-width,initial-scale:1.0" />
         <title>Welcome to Open Source Zongo</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="nav">
             <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"/></svg>
         </div>
+        <div class="nav-area">
+            <a>Home</a>
+            <a>Training Programs</a>
+            <a>Projects</a>
+            <a>Gallery</a>
+            <a>Our Team</a>
+            <a>About Us</a>
+            <a>Partners</a>
+        </div>
         <h1>Welcome to Open Source Zongo</h1>
         <h2>Who are we?</h2>
-        <h3>is a registered non-governmental organization that is dedicated to leveraging digital public goods to bridge the great digital divide in zongo and other underprivileged communities.
-        </h3>
+        <p>is a registered non-governmental organization that is dedicated to leveraging digital public goods to bridge the great digital divide in zongo and other underprivileged communities.
+        </p>
         <h2>What is our mission?</h2>
-        <h3>Open Source Zongo exists to bridge the digital divide in Zongo and other underprivileged communities.</h3>
+        <p>Open Source Zongo exists to bridge the digital divide in Zongo and other underprivileged communities.</p>
         <h2>What is our vision?</h2>
-        <h3>OSZ envision collaborating with Zongo communities across West Africa to bridge the digital divide and empower underprivileged societies through digital public goods.</h3>
+        <p>OSZ envisions collaborating with Zongo communities across West Africa to bridge the digital divide and empower underprivileged societies through digital public goods.</p>
+    <style>
+        *{
+            font-family: Poppins;
+        }
+    </style>
+    <script>
+        function toggleMenu(){
+            document.querySelector("div.nav-area").classList.toggle("open");
+        }
+        document.querySelector("div.nav svg").addEventListener("click",function(){
+            toggleMenu();
+        });
+    </script>
+    <footer>
+        Powered by OSZ 2025
+    </footer>
     </body>
 </html>
