@@ -1,85 +1,84 @@
-html,body{
-    height: 100vh;
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    margin: 0px;
-    font-family: Calibri;
-    text-align: center;
-    background-image: url("images/background-splash.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: rgba(250,250,250,.6);
-    background-blend-mode: color;
-    background-attachment: fixed;
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
-p{
-    box-sizing: border-box;
-    padding: 0px 5vw;
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin: auto;
+  padding: 20px;
 }
 
-div.nav{
-    height: 10vh;
-    color: white;
-    background-color: white;
-    background-image: url("images/nav-splash.png");
-    background-blend-mode: normal;
-    background-size:contain;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    position: sticky;
-    top: 0px;
-    box-shadow: 1px 1px 8px 1px gray;
+header {
+  background: #1d3557;
+  color: #fff;
+  padding: 20px 0;
 }
 
-div.nav svg{
-    width: auto;
-    height: 60%;
-    margin: auto 0px;
+header h1 {
+  text-align: center;
 }
 
-div.nav-area{
-    background-color: white;
-    transition: all .5s linear;
-    height: 0%;
-    overflow: hidden;
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 10px;
 }
 
-@keyframes open{
-    from{
-        height: 0%;
-    }
-
-
-
-    to{
-        height: max-content;
-    }
+nav ul li {
+  margin: 0 15px;
 }
 
-.open{
-    animation: open linear .25s forwards;
+nav a {
+  color: #f1faee;
+  text-decoration: none;
 }
 
-
-.hide{
-    display: none;
+.hero {
+  background: #457b9d;
+  color: #fff;
+  padding: 60px 0;
+  text-align: center;
 }
 
-div.nav-area a{
-    display: block;
-    text-align: left;
-    padding: .5em;
+.hero .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background: #e63946;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
-footer{
-    background-color: #222222;
-    color: white;
-    font-size: 11pt;
-    font-style: italic;
-    text-align: left;
-    padding: 10px;
+.section {
+  padding: 40px 0;
+}
+
+.section h3 {
+  margin-bottom: 20px;
+  color: #1d3557;
+}
+
+.section ul {
+  list-style-type: none;
+}
+
+footer {
+  background: #1d3557;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
 }

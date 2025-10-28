@@ -1,49 +1,70 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <link rel="stylesheet" href="style.css" type="text/css" />
-        <meta name="viewport" content="width=device-width,initial-scale:1.0" />
-        <title>Welcome to Open Source Zongo</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class="nav">
-            <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"/></svg>
-        </div>
-        <div class="nav-area">
-            <a>Home</a>
-            <a>Training Programs</a>
-            <a>Projects</a>
-            <a>Gallery</a>
-            <a>Our Team</a>
-            <a>About Us</a>
-            <a>Partners</a>
-        </div>
-        <h1>Welcome to Open Source Zongo</h1>
-        <h2>Who are we?</h2>
-        <p>is a registered non-governmental organization that is dedicated to leveraging digital public goods to bridge the great digital divide in zongo and other underprivileged communities.
-        </p>
-        <h2>What is our mission?</h2>
-        <p>Open Source Zongo exists to bridge the digital divide in Zongo and other underprivileged communities.</p>
-        <h2>What is our vision?</h2>
-        <p>OSZ envisions collaborating with Zongo communities across West Africa to bridge the digital divide and empower underprivileged societies through digital public goods.</p>
-    <style>
-        *{
-            font-family: Poppins;
-        }
-    </style>
-    <script>
-        function toggleMenu(){
-            document.querySelector("div.nav-area").classList.toggle("open");
-        }
-        document.querySelector("div.nav svg").addEventListener("click",function(){
-            toggleMenu();
-        });
-    </script>
-    <footer>
-        Powered by OSZ 2025
-    </footer>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Open Source Zongo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Open Source Zongo</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">Home</a></li>
+          <li><a href="#contact">Blog</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Gallery</a></li>
+          <li><a href="#contact">Team</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Empowering Communities Through Open Source</h2>
+      <p>Building free and collaborative technology for Zongo communities and beyond.</p>
+      <a href="#about" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h3>About Us</h3>
+      <p>
+        Open Source Zongo is a community-driven organization focused on promoting open-source education,
+        collaboration, and innovation in Zongo communities. We believe in open knowledge and empowering youth
+        with technology skills.
+      </p>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h3>Our Projects</h3>
+      <ul>
+        <li>🏫 Open School Platform</li>
+        <li>🌍 Local Language Apps</li>
+        <li>💻 Code for Zongo Workshops</li>
+        <li>📦 Community Hardware Labs</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h3>Contact Us</h3>
+      <p>Email: contact@opensourcezongo.org</p>
+      <p>Twitter: <a href="https://twitter.com/opensourcezongo" target="_blank">@opensourcezongo</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Open Source Zongo. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
 </html>
