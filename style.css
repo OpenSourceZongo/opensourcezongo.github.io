@@ -5,11 +5,21 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: Quicksand;
+  src: url("Quicksand.ttf");
+}
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   background-color: #f9f9f9;
   color: #333;
+}
+
+p{
+  font-family: Quicksand;
+  font-weight: 500;
 }
 
 .container {
@@ -81,4 +91,27 @@ footer {
   text-align: center;
   padding: 20px 0;
   margin-top: 40px;
+}
+
+.splash-banner{
+  background-image: url("./images/banner-splash.webp");
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: bottom center;
+}
+
+.team-carousel{
+  display: grid;
+}
+
+@media screen and (max-width: 400px){
+  .team-carousel{
+    grid-template-columns: 1fr;
+  }
+
+  .team-carousel img{
+    width: 100%;
+    height: auto;
+    margin: 10vh 0px 2vh 0px;
+  }
 }
