@@ -114,4 +114,16 @@ footer {
     height: auto;
     margin: 10vh 0px 2vh 0px;
   }
+
+  .gallery p{
+    text-align: center;
+    font-style: italic;
+  }
+
+  .gallery img{
+    width: calc(100vw - 20px);
+    height: auto;
+    margin: 20px auto 5px auto;
+    display: block;
+  }
 }
